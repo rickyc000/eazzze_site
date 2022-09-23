@@ -5,7 +5,7 @@ import mixData from './mixes.json'
 
 import Nav from './components/Nav.js'
 import Mix from './components/Mix.js'
-// import Tracklist from './components/Tracklist.js'
+import Tracklist from './components/Tracklist.js'
 
 import mix1Artwork from './assets/headroom_IMG_1817.png'
 
@@ -14,9 +14,7 @@ const mix1 = {
   art: mix1Artwork
 }
 
-// const mixName = mixData.averages.name
-
-console.log(mixData)
+console.log(typeof(mixData))
 
 function App() {
 
@@ -51,9 +49,9 @@ function App() {
         }
       </div>
 
-      {/* <Tracklist /> */}
-
-
+      <Tracklist 
+        tracklist={mixData['z11.1']['tracklist']} />
+        
     </main >
   )
 }
