@@ -16,7 +16,6 @@ function Tracklist({ tracklist }) {
         ))
       }
       </ul>
-
     </div>
   )
 }

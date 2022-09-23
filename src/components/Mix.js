@@ -24,14 +24,7 @@ function Mix({ mix }) {
         allow="autoplay"
         src={mix.src}>
       </iframe>
-      {/* <div
-        style={style1}
-      >
-      </div> */}
 
-      <div>
-        tracklist
-      </div>
     </div >
   )
 }

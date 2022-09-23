@@ -14,21 +14,15 @@ const mix1 = {
   art: mix1Artwork
 }
 
-console.log(typeof(mixData))
 
 function App() {
 
   const [mixOpen, setMixOpen] = React.useState(false)
-  console.log(mixOpen)
+  const [tracklistVisible, setTracklistVisible] = React.useState(false)
 
-  // // setMixOpen(true)
-  // // console.log(mixOpen)
-
-  // // const Hello = false
-
-  // const clicksEnter = () => {
-  //   setMixOpen(true)
-  // }
+  const openTracklist = () => {
+    setTracklistVisible(!tracklistVisible)
+  }
 
 
   return (
@@ -37,9 +31,15 @@ function App() {
       <div className='mix-wrapper'>
         {
           mixOpen ?
-            <Mix
-              mix={mixData['z11.1']}
-              onClick={() => setMixOpen(!mixOpen)} />
+            <>
+              <Mix
+                mix={mixData['z11.1']} />
+              <div
+                onClick={openTracklist}
+                >
+                tracklist
+              </div>
+            </>
             :
             <img
               src={mix1.art}
@@ -49,9 +49,16 @@ function App() {
         }
       </div>
 
-      <Tracklist 
+
+      {
+        tracklistVisible ? 
+        <Tracklist
         tracklist={mixData['z11.1']['tracklist']} />
-        
+        :
+        <div>
+          closed
+        </div>
+      }
     </main >
   )
 }
