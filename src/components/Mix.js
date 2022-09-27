@@ -14,10 +14,10 @@ import React from 'react'
 function Mix({ mix }) {
 
   return (
-    <div>
+    <div className='soundcloud-embed-wrap'>
       <iframe
         title='mix1'
-        width="100%"
+        width="300"
         height="300"
         scrolling="no"
         frameborder="no"

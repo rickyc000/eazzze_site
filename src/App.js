@@ -8,10 +8,10 @@ import Mix from './components/Mix.js'
 import Tracklist from './components/Tracklist.js'
 
 import mix1Artwork from './assets/headroom_IMG_1817.png'
+import close from './assets/icons/icons8-close-window-96.png'
 
-const mix1 = {
-  src: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1337514391&color=%230b0c0c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
-  art: mix1Artwork
+const artwork = {
+  mix1: mix1Artwork
 }
 
 
@@ -20,9 +20,11 @@ function App() {
   const [mixOpen, setMixOpen] = React.useState(false)
   const [tracklistVisible, setTracklistVisible] = React.useState(false)
 
-  const openTracklist = () => {
+  const toggleTracklistView = () => {
     setTracklistVisible(!tracklistVisible)
   }
+
+  console.log(mixData)
 
 
   return (
@@ -31,33 +33,50 @@ function App() {
       <div className='mix-wrapper'>
         {
           mixOpen ?
-            <>
-              <Mix
-                mix={mixData['z11.1']} />
-              <div
-                onClick={openTracklist}
-                >
-                tracklist
+            <div>
+              <div className='open-mix'>
+                <Mix
+                  mix={mixData['z11.1']} />
+                <div
+                  className='close-mix-window-wrapper'
+                  onClick={() => setMixOpen(false)}>
+                  <img
+                    className='close-mix-window'
+                    src={close}
+                    alt="close-mix"
+                    width="26px" />
+                </div>
               </div>
-            </>
+              <div
+                onClick={toggleTracklistView}
+              >
+                view tracklist
+              </div>
+            </div>
             :
-            <img
-              src={mix1.art}
-              alt='mix1'
-              className='mix-artwork'
-              onClick={() => setMixOpen(!mixOpen)} />
+            <div className='closed-mix'>
+              <img
+                src={artwork.mix1}
+                alt='mix1'
+                className='mix-artwork'
+                onClick={() => setMixOpen(!mixOpen)} />
+            </div>
         }
       </div>
 
 
       {
-        tracklistVisible ? 
-        <Tracklist
-        tracklist={mixData['z11.1']['tracklist']} />
-        :
-        <div>
-          closed
-        </div>
+        tracklistVisible ?
+          <div>
+            <Tracklist
+              tracklist={mixData['z11.1']['tracklist']} />
+            <div className='close-button' onClick={toggleTracklistView}>
+              close
+            </div>
+          </div>
+          :
+          <div>
+          </div>
       }
     </main >
   )
