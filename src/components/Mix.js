@@ -69,10 +69,8 @@ function Mix({ mix, artwork }) {
         tracklistVisible ?
           <div>
             <Tracklist
-              tracklist={mix['tracklist']} />
-            <div className='close-button' onClick={toggleTracklistView}>
-              close
-            </div>
+              tracklist={mix['tracklist']}
+              toggleTracklistView={toggleTracklistView} />
           </div>
           :
           <div>
