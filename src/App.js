@@ -8,10 +8,13 @@ import Mix from './components/Mix.js'
 import Tracklist from './components/Tracklist.js'
 
 import mix1Artwork from './assets/headroom_IMG_1817.png'
+import mix2Artwork from './assets/CCL-Mix-Art.jpeg'
+
 import close from './assets/icons/icons8-close-window-96.png'
 
 const artwork = {
-  mix1: mix1Artwork
+  mix1: mix1Artwork,
+  mix2: mix2Artwork
 }
 
 
@@ -23,8 +26,6 @@ function App() {
   const toggleTracklistView = () => {
     setTracklistVisible(!tracklistVisible)
   }
-
-  console.log(mixData)
 
 
   return (
@@ -48,9 +49,10 @@ function App() {
                 </div>
               </div>
               <div
+                className='tracklist-toggle'
                 onClick={toggleTracklistView}
               >
-                view tracklist
+                tracklist
               </div>
             </div>
             :
@@ -62,22 +64,71 @@ function App() {
                 onClick={() => setMixOpen(!mixOpen)} />
             </div>
         }
+        {
+          tracklistVisible ?
+            <div>
+              <Tracklist
+                tracklist={mixData['z11.1']['tracklist']} />
+              <div className='close-button' onClick={toggleTracklistView}>
+                close
+              </div>
+            </div>
+            :
+            <div>
+            </div>
+        }
       </div>
 
 
-      {
-        tracklistVisible ?
-          <div>
-            <Tracklist
-              tracklist={mixData['z11.1']['tracklist']} />
-            <div className='close-button' onClick={toggleTracklistView}>
-              close
+      <div className='mix-wrapper'>
+        {
+          mixOpen ?
+            <div>
+              <div className='open-mix'>
+                <Mix
+                  mix={mixData['CCLmix']} />
+                <div
+                  className='close-mix-window-wrapper'
+                  onClick={() => setMixOpen(false)}>
+                  <img
+                    className='close-mix-window'
+                    src={close}
+                    alt="close-mix"
+                    width="26px" />
+                </div>
+              </div>
+              <div
+                className='tracklist-toggle'
+                onClick={toggleTracklistView}
+              >
+                tracklist
+              </div>
             </div>
-          </div>
-          :
-          <div>
-          </div>
-      }
+            :
+            <div className='closed-mix'>
+              <img
+                src={artwork.mix2}
+                alt='mix2'
+                className='mix-artwork'
+                onClick={() => setMixOpen(!mixOpen)} />
+            </div>
+        }
+        {
+          tracklistVisible ?
+            <div>
+              <Tracklist
+                tracklist={mixData['CCLmix']['tracklist']} />
+              <div className='close-button' onClick={toggleTracklistView}>
+                close
+              </div>
+            </div>
+            :
+            <div>
+            </div>
+        }
+      </div>
+
+
     </main >
   )
 }

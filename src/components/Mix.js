@@ -1,15 +1,6 @@
 import React from 'react'
 
-// const style1 = {
-//   fontsize: '10px',
-//   color: '#cccccc',
-//   linebreak: 'anywhere',
-//   wordbreak: 'normal',
-//   overflow: 'hidden',
-//   whitespace: 'nowrap',
-//   textoverflow: 'ellipsis',
-//   fontfamily: 'Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100'
-// }
+
 
 function Mix({ mix }) {
 

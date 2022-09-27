@@ -30,7 +30,7 @@ nav {
 .title {
   font-size: 20px;
   padding: 17px;
-  border-bottom: 1px solid $text-color;
+  border-bottom: 2px solid black;
 }
 
 .mix-artwork {
@@ -41,6 +41,7 @@ nav {
 
 .tracklist-wrapper {
   background-color:rgba(135, 135, 135, 0.8);
+  background-color: rgba(218, 218, 193, 0.69);
   color: #000000;
   position: absolute;
   display: flex;
@@ -77,4 +78,14 @@ ul {
 
 .close-mix-window-wrapper {
   justify-self: flex-end;
+}
+
+.tracklist-toggle {
+  color: black;
+  border: 2px solid black;
+  padding: 2px;
+  margin: 2px;
+  width: min-content;
+  display: inline;
+  float: right;
 }

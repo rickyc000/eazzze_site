@@ -1,37 +1,45 @@
 {
-  "z11.1":
-    {
-      "name": "z11.1",
-      "src": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1337514391&color=%230b0c0c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
-      "tracklist": {
-        "Mister Water Wet" : "Bory",
-        "Space Afrika" : "where is",
-        "Pessimist & Karim Maas" : "B1",
-        "Sa Pa" : "Morocco",
-        "upsammy" : "localized patterning",
-        "Special Guest DJ" : "waiting for the stars to change",
-        "Meetsysteem" : "Noch de Sterren van de Hemel (Speedy J & Meetsysteem Terug Remix)",
-        "Prime Vertical" : "Saturn in the 12th House",
-        "Vilod" : "Clop",
-        "Pavel Milyakov" : "sdr gtr",
-        "Civilistjävel!" : "B1",
-        "Ossia" : "Inertia",
-        "Lee Gamble" : "Many Gods, Many Angels",
-        "Cucina Povera & Ben Vince" : "Strong Low City Lights",
-        "James Hoff" : "Other Sirens",
-        "Akhira Sano" : "Generate 10",
-        "FFT" : "Ashley Hill",
-        "m. geddes gengras" : "ohhh boyyyy",
-        "Mira Calix" : "Little Long Gone",
-        "Blackwater" : "Istanbul",
-        "perila" : "over me",
-        "Reinartz" : "B2",
-        "Coil" : "4-Indolol,3-[2-(Dimethylamino)Ethyl],Phosphate Ester- (Psilocybin)",
-        "Donato Dozzy" : "12H.3",
-        "Klon Dump" : "Inpatient",
-        "Terekke" : "Closer",
-        "Leif" : "Emotional Risk Assessment"
-      }
-
+  "z11.1": {
+    "name": "z11.1",
+    "src": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1337514391&color=%230b0c0c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "tracklist": {
+      "Mister Water Wet": "Bory",
+      "Space Afrika": "where is",
+      "Pessimist & Karim Maas": "B1",
+      "Sa Pa": "Morocco",
+      "upsammy": "localized patterning",
+      "Special Guest DJ": "waiting for the stars to change",
+      "Meetsysteem": "Noch de Sterren van de Hemel (Speedy J & Meetsysteem Terug Remix)",
+      "Prime Vertical": "Saturn in the 12th House",
+      "Vilod": "Clop",
+      "Pavel Milyakov": "sdr gtr",
+      "Civilistjävel!": "B1",
+      "Ossia": "Inertia",
+      "Lee Gamble": "Many Gods, Many Angels",
+      "Cucina Povera & Ben Vince": "Strong Low City Lights",
+      "James Hoff": "Other Sirens",
+      "Akhira Sano": "Generate 10",
+      "FFT": "Ashley Hill",
+      "m. geddes gengras": "ohhh boyyyy",
+      "Mira Calix": "Little Long Gone",
+      "Blackwater": "Istanbul",
+      "perila": "over me",
+      "Reinartz": "B2",
+      "Coil": "4-Indolol,3-[2-(Dimethylamino)Ethyl],Phosphate Ester- (Psilocybin)",
+      "Donato Dozzy": "12H.3",
+      "Klon Dump": "Inpatient",
+      "Terekke": "Closer",
+      "Leif": "Emotional Risk Assessment"
     }
+  },
+  "CCLmix": {
+    "name": "CCLMix",
+    "src": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1190321872&color=%230b0c0c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "tracklist": {
+      "artist one": "hello track 1",
+      "second artist": "this is track 2",
+      "three artiste": "well hi"
+    }
+  }
 }
+
