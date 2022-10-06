@@ -19,6 +19,8 @@ function Mix({ mix, artwork }) {
     setTracklistVisible(!tracklistVisible)
   }
 
+  console.log(mixOpen)
+
   return (
     <div>
 
@@ -40,16 +42,14 @@ function Mix({ mix, artwork }) {
               </div >
               <div
                 className='open-mix-options'
-                onClick={() => setMixOpen(false)}>
+                >
                 <img
                   className='close-mix-window'
+                  onClick={() => setMixOpen(false)}
                   src={close}
                   alt="close-mix"
                   width="20px" />
-                <div
-                  className='tracklist-toggle'
-                  onClick={toggleTracklistView}
-                >
+                <div className='tracklist-toggle' onClick={toggleTracklistView} >
                   tracklist
                 </div>
               </div>
