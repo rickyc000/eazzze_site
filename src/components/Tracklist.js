@@ -1,5 +1,6 @@
 import React from 'react'
 
+import close from '../assets/icons/close-svgrepo-com.svg'
 
 function Tracklist({ tracklist, toggleTracklistView }) {
 
@@ -18,10 +19,11 @@ function Tracklist({ tracklist, toggleTracklistView }) {
           }
         </ul>
       </div>
-      <div
-        onClick={toggleTracklistView}>
-        close tracklist
-      </div>
+      <img
+        className='close-mix-window'
+        src={close}
+        alt="close-mix"
+        width="20px" />
     </div>
   )
 }

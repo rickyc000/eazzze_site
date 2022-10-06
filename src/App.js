@@ -39,7 +39,10 @@ function App() {
       </div>
 
 
-      
+      <footer>
+        {/* <a href="mailto:eazzze.info@gmail.com">eazzze.info@gmail.com</a> */}
+        <a href="https://soundcloud.com/eazzze" target="_blank" rel="noreferrer">soundcloud</a>
+      </footer>
 
 
     </main >
