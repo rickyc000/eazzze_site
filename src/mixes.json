@@ -32,14 +32,40 @@
       "Leif": "Emotional Risk Assessment"
     }
   },
-  "CCLmix": {
-    "name": "CCLMix",
-    "src": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1190321872&color=%230b0c0c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+  "E00": {
+    "name": "E00",
+    "src": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1354292263&color=%230b0c0c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     "tracklist": {
-      "artist one": "hello track 1",
-      "second artist": "this is track 2",
-      "three artiste": "well hi"
+      "Bogdan Raczynski": "DLEDA",
+      "Aleksi Peräla": "NL-L56-18-07385",
+      "Realitycheck": "Hoax(Heat Mix)",
+      "upsammy": "Spat",
+      "Less-O": "Bumblebee",
+      "O.M. Theorem": "Lemma2-A2",
+      "Toma Kami": "BOH-ee",
+      "buttechno": "the great acids",
+      "Huerco S.": "Plonk VIII",
+      "Korsssakov": "Prison Mukbang",
+      "Rhyw": "Anasa",
+      "Squarepusher": "Vortrack (Fracture Remix)",
+      "CCL": "Drum On",
+      "D Tiffany, Roza Terenzi": "Redemption Arc",
+      "The Jaffa Kid": "Sbds",
+      "Ghost Warrior": "They Live",
+      "DYL / DB1": "Uniformity of Nature",
+      "Forest Drive West": "Sustain",
+      "Donato Dozzy": "Tao",
+      "Homemade Weapons": "Keelhaul MVP",
+      "Tammo Hesselink": "Danaba",
+      "Tonto": "Moa",
+      "Konduku": "Mantar Kaya",
+      "Ena": "Behind The Loops",
+      "Metrist": "GMFGR",
+      "Monolake": "Polaroid",
+      "D. Tiffany": "4 Leaf",
+      "Stone": "Beacon"
     }
   }
 }
+
 

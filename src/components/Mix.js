@@ -28,8 +28,8 @@ function Mix({ mix, artwork }) {
               <div className='soundcloud-embed-wrap'>
                 <iframe
                   title='mix1'
-                  width="300"
-                  height="300"
+                  width="400"
+                  height="400"
                   scrolling="no"
                   frameborder="no"
                   allow="autoplay"

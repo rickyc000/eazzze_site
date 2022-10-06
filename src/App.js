@@ -8,7 +8,7 @@ import Mix from './components/Mix.js'
 // import Tracklist from './components/Tracklist.js'
 
 import mix1Artwork from './assets/headroom_IMG_1817.png'
-import mix2Artwork from './assets/CCL-Mix-Art.jpeg'
+import mix2Artwork from './assets/mix2-iphone.JPG'
 
 // import close from './assets/icons/icons8-close-window-96.png'
 
@@ -32,9 +32,9 @@ function App() {
       </div>
 
             
-      <div className='mix-wrapper'>
+      <div className='mix-wrapper testmix'>
         <Mix
-          mix={mixData['CCLmix']}
+          mix={mixData['E00']}
           artwork={artwork.mix2} />
       </div>
 
