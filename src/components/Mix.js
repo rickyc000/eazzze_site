@@ -6,7 +6,9 @@ import React from 'react'
 import Tracklist from '../components/Tracklist.js'
 
 // import close from '../assets/icons/icons8-close-window-96.png'
-import close from '../assets/icons/close-svgrepo-com.svg'
+// import close from '../assets/icons/close-svgrepo-com.svg'
+import close from '../assets/icons/close-svgrepo-com (3).svg'
+import tracklist from '../assets/icons/lines-svgrepo-com.svg'
 
 
 
@@ -31,8 +33,8 @@ function Mix({ mix, artwork }) {
               <div className='soundcloud-embed-wrap'>
                 <iframe
                   title='mix1'
-                  width="350"
-                  height="350"
+                  width="320"
+                  height="320"
                   scrolling="no"
                   frameborder="no"
                   allow="autoplay"
@@ -50,7 +52,12 @@ function Mix({ mix, artwork }) {
                   alt="close-mix"
                   width="20px" />
                 <div className='tracklist-toggle' onClick={toggleTracklistView} >
-                  tracklist
+                <img
+                  className='close-mix-window'
+                  onClick={() => setMixOpen(false)}
+                  src={tracklist}
+                  alt="close-mix"
+                  width="20px" />
                 </div>
               </div>
             </div>

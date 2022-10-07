@@ -14,13 +14,19 @@ body {
   color: #000000;
   color: rgb(218, 218, 193);
   color: $text-color;
-  font-family: Arial;
+  font-family: Times New Roman;
   margin: 0;
   padding: 0;
   font-size: 20px;
+  height: 100%;
   // letter-spacing: 1px;
 }
 
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 
 nav {
@@ -31,7 +37,7 @@ nav {
 
 .mix-wrapper {
   width: 300px;
-  margin: 20px;
+  margin: 40px 30px;
   // border: 1px solid lightgray;
 }
 
@@ -45,8 +51,8 @@ nav {
 }
 
 .mix-artwork {
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   cursor: pointer;
 }
 
@@ -96,6 +102,8 @@ ul {
 
 .open-mix-options {
   justify-self: flex-end;
+  background-color: $text-color;
+  height: 90px;
 }
 
 .tracklist-toggle {
@@ -113,4 +121,19 @@ a {
   color: $text-color;
   padding: 17px;
   text-decoration: none;
+}
+
+.footer {
+  // position: absolute;
+  bottom: 0;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.mix-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mix-wrapper {
+  flex: 1;
 }

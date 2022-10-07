@@ -24,23 +24,39 @@ function App() {
   return (
     <main className="App">
       <Nav />
-      
-      <div className='mix-wrapper'>
-        <Mix
-          mix={mixData['z11.1']} 
-          artwork={artwork.mix1} />
+
+      <div className='mix-section'>
+        <div className='mix-wrapper'>
+          <Mix
+            mix={mixData['z11.1']}
+            artwork={artwork.mix1} />
+        </div>
+
+
+        <div className='mix-wrapper testmix'>
+          <Mix
+            mix={mixData['E00']}
+            artwork={artwork.mix2} />
+        </div>
+
+        <div className='mix-wrapper'>
+          <Mix
+            mix={mixData['z11.1']}
+            artwork={artwork.mix1} />
+        </div>
+
+
+        <div className='mix-wrapper testmix'>
+          <Mix
+            mix={mixData['E00']}
+            artwork={artwork.mix2} />
+        </div>
+
       </div>
 
-            
-      <div className='mix-wrapper testmix'>
-        <Mix
-          mix={mixData['E00']}
-          artwork={artwork.mix2} />
-      </div>
 
-
-      <footer>
-        {/* <a href="mailto:eazzze.info@gmail.com">eazzze.info@gmail.com</a> */}
+      <footer className='footer'>
+        <a href="mailto:eazzze.info@gmail.com">email</a>
         <a href="https://soundcloud.com/eazzze" target="_blank" rel="noreferrer">soundcloud</a>
       </footer>
 
