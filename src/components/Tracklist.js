@@ -20,7 +20,7 @@ function Tracklist({ tracklist, toggleTracklistView }) {
         </ul>
       </div>
       <img
-        className='close-mix-window'
+        className='close-tracklist-modal'
         onClick={toggleTracklistView}
         src={close}
         alt="close-tracklist"

@@ -44,21 +44,19 @@ function Mix({ mix, artwork }) {
               </div >
               <div
                 className='open-mix-options'
-                >
+              >
                 <img
                   className='close-mix-window'
                   onClick={() => setMixOpen(false)}
                   src={close}
                   alt="close-mix"
-                  width="20px" />
-                <div className='tracklist-toggle' onClick={toggleTracklistView} >
+                  width="18px" />
                 <img
-                  className='close-mix-window'
-                  onClick={() => setMixOpen(false)}
+                  className='open-tracklist-modal'
+                  onClick={toggleTracklistView}
                   src={tracklist}
                   alt="close-mix"
-                  width="20px" />
-                </div>
+                  width="18px" />
               </div>
             </div>
           </div>

@@ -9,17 +9,20 @@ import Mix from './components/Mix.js'
 
 import mix1Artwork from './assets/headroom_IMG_1817.png'
 import mix2Artwork from './assets/mix2-iphone.JPG'
+// import mix3Artwork from './assets/130-Mix.png'
 
 // import close from './assets/icons/icons8-close-window-96.png'
 
 const artwork = {
   mix1: mix1Artwork,
-  mix2: mix2Artwork
+  mix2: mix2Artwork,
+  // mix3: mix3Artwork
 }
 
 
 function App() {
 
+  console.log(artwork.mix3)
 
   return (
     <main className="App">
