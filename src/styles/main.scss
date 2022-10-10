@@ -150,13 +150,15 @@ a {
 }
 
 main {
-  background: repeating-linear-gradient(2deg,
-      $text-color,
-      $base-color 10px,
+  background: repeating-linear-gradient(0deg,
+      $text-color 2px,
+      $base-color 5px,
       #000000 4px,
-      $base-color 6px);
+      rgb(0, 0, 0) 6px,
+      rgb(91, 91, 91) 8px,
+      $base-color 2px);
   background-size: 200% 200%;
-  animation: barberpole 300s ease-in-out infinite;
+  animation: barberpole 200s ease-in-out infinite;
 }
 
 // animation-timing-function: ease-in-out;
@@ -165,19 +167,25 @@ main {
   100% {
     background-position: 100% 100%;
   }
+  50% {
+    background-position: 50% 50%;
+  }
 }
 
-@keyframes testing {
-  50% {
-    background: repeating-linear-gradient(red,
-    yellow 7px,
-    #ff0000 8px,
-    yellow 7px);
-  }
-  100% {
-    background: repeating-linear-gradient($text-color,
-    $base-color 7px,
-    #3c3c3c 8px,
-    $base-color 7px);
-  }
-}
+// @keyframes testing {
+//   0% {
+//     transform: rotate3d(3, 4, 5, 3deg);
+//   }
+//   50% {
+//     transform: rotate3d(1, 1, 1, 2deg);
+//   }
+//   100% {
+//     transform: rotate3d(1, 1, 1, 2deg);
+//     // transform: scale(0);
+//   }
+// }
+
+// .testmix {
+//   animation: testing 10s infinite;
+// }
+
