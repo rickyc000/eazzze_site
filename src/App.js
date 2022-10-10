@@ -9,14 +9,16 @@ import Mix from './components/Mix.js'
 
 import mix1Artwork from './assets/headroom_IMG_1817.png'
 import mix2Artwork from './assets/mix2-iphone.JPG'
-// import mix3Artwork from './assets/130-Mix.png'
+import mix3Artwork from './assets/mix3-test.jpg'
+import mix4Artwork from './assets/z11.2.jpg'
 
 // import close from './assets/icons/icons8-close-window-96.png'
 
 const artwork = {
   mix1: mix1Artwork,
   mix2: mix2Artwork,
-  // mix3: mix3Artwork
+  mix3: mix3Artwork,
+  mix4: mix4Artwork
 }
 
 
@@ -42,24 +44,25 @@ function App() {
             artwork={artwork.mix2} />
         </div>
 
-        <div className='mix-wrapper'>
+        {/* <div className='mix-wrapper'>
           <Mix
             mix={mixData['z11.1']}
-            artwork={artwork.mix1} />
+            artwork={artwork.mix3} />
         </div>
 
 
         <div className='mix-wrapper testmix'>
           <Mix
             mix={mixData['E00']}
-            artwork={artwork.mix2} />
-        </div>
+            artwork={artwork.mix4} />
+        </div> */}
 
       </div>
 
 
       <footer className='footer'>
         <a href="mailto:eazzze.info@gmail.com">email</a>
+        <a href="https://www.instagram.com/_rickycato/" target="_blank" rel="noreferrer">instagram</a>
         <a href="https://soundcloud.com/eazzze" target="_blank" rel="noreferrer">soundcloud</a>
       </footer>
 

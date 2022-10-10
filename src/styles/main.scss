@@ -77,6 +77,10 @@ nav {
   right: 0;
 }
 
+.tracklist-wrapper2 {
+  display: flex;
+}
+
 .tracklist-wrapper {
   background-color: $base-color;
   color: $text-color;
@@ -96,10 +100,12 @@ ul {
 }
 
 .open-mix-options {
-  justify-self: flex-end;
+  // justify-self: flex-end;
   background-color: $text-color;
   height: min-content;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
 .open-tracklist-modal {
@@ -112,6 +118,18 @@ ul {
 
 .close-mix-window {
   margin: 4px 4px 0px 4px;
+}
+
+.close-tracklist {
+  height: min-content;
+  background-color: $text-color;
+  margin: 4px 4px 0px;
+  cursor: pointer;
+}
+
+.close-tracklist-wrapper {
+  background-color: $text-color;
+  height: min-content;
 }
 
 
