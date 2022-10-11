@@ -1,6 +1,6 @@
 import React from 'react'
 
-import close from '../assets/icons/close-svgrepo-com.svg'
+import close from '../assets/icons/close-svgrepo-com (3).svg'
 
 function Tracklist({ tracklist, toggleTracklistView }) {
 

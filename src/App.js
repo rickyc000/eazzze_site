@@ -62,7 +62,7 @@ function App() {
 
       <footer className='footer'>
         <a href="mailto:eazzze.info@gmail.com">email</a>
-        <a href="https://www.instagram.com/_rickycato/" target="_blank" rel="noreferrer">instagram</a>
+        {/* <a href="https://www.instagram.com/_rickycato/" target="_blank" rel="noreferrer">instagram</a> */}
         <a href="https://soundcloud.com/eazzze" target="_blank" rel="noreferrer">soundcloud</a>
       </footer>
 

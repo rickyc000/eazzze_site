@@ -47,12 +47,13 @@ nav {
 
 .title {
   padding: 17px;
-  // border-bottom: 2px solid black;
+  cursor: default;
+  width: min-content;
 }
 
 .mix-artwork {
-  width: 320px;
-  height: 320px;
+  width: 305px;
+  height: 305px;
   cursor: pointer;
 }
 
@@ -113,7 +114,7 @@ ul {
 }
 
 .open-tracklist-modal {
-  margin: 2px 4px 0px 4px;
+  margin: 5px 4px 4px 4px;
 }
 
 .close-mix-window {

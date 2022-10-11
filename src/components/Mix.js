@@ -1,8 +1,5 @@
 import React from 'react'
 
-// import mix1Artwork from '../assets/headroom_IMG_1817.png'
-// import mix2Artwork from '../assets/CCL-Mix-Art.jpeg'
-
 import Tracklist from '../components/Tracklist.js'
 
 // import close from '../assets/icons/icons8-close-window-96.png'
@@ -33,8 +30,8 @@ function Mix({ mix, artwork }) {
               <div className='soundcloud-embed-wrap'>
                 <iframe
                   title='mix1'
-                  width="320"
-                  height="320"
+                  width="305"
+                  height="305"
                   scrolling="no"
                   frameborder="no"
                   allow="autoplay"
