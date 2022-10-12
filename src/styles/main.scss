@@ -122,20 +122,32 @@ ul {
 
 .open-tracklist-modal {
   margin: 5px 4px 4px 4px;
+  transition: 0.2s;
+}
+
+.open-tracklist-modal:hover {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  transition: 0.2s;
 }
 
 .close-mix-window {
+  transition: 0.2s;
   margin: 4px 4px 0px 4px;
 }
 
+.close-mix-window:hover {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(50%);
+  transition: 0.2s;
+}
+
 .closed-mix {
-  background: white;
+  background: $text-color;
   height: 305px;
   width: max-content;
 }
 
 .mix-artwork:hover {
-  opacity: 0.8;
+  opacity: 0.7;
   transition: 0.5s;
 }
 
@@ -213,8 +225,8 @@ main {
 
 .cursor-style {
   background-color: $text-color;
-  height: 0.85rem;
-  width: 0.85rem;
+  height: 0.8rem;
+  width: 0.8rem;
   border: 1px solid black;
   box-shadow: 2px 2px #000000;
   transform-origin: 100% 100%;
