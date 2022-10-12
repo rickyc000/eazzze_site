@@ -20,10 +20,9 @@ function Tracklist({ tracklist, toggleTracklistView }) {
             }
           </ul>
         </div>
-        <div className='close-tracklist-wrapper'>
+        <div className='close-tracklist-wrapper' onClick={toggleTracklistView}>
           <img
             className='close-tracklist'
-            onClick={toggleTracklistView}
             src={close}
             alt="close-tracklist"
             width="18px" />
