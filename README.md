@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+<img src='./public/favicon.ico' width="70px">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Artist Website: eazzze
 
-## Available Scripts
+## Project Brief
+To produce a visually interesting artist website presenting mixes via embedded Soundcloud content with corresponding mix tracklists.
 
-In the project directory, you can run:
+## Technologies Used
 
-### `yarn start`
+* React.js
+## Deployed Version
+https://eazzze.net/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Development
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The tracklist modal is presented by defining a `toggleTracklistView` as a function in the Mix parent component:
 
-### `yarn test`
+```
+const toggleTracklistView = () => {
+  setTracklistVisible(!tracklistVisible)
+}
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is then passed as a prop to Tracklist child component, allowing the tracklist view to be closed from within the Tracklist component:
 
-### `yarn build`
+```
+<div className='close-tracklist-wrapper'>
+  <img
+    className='close-tracklist'
+    onClick={toggleTracklistView}
+    src={close}
+    alt="close-tracklist"
+    width="18px" />
+</div>
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The moving background effect was created using the `repeating-linear-gradient` CSS function on the background property:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+main {
+  background: repeating-linear-gradient(0deg,
+      $text-color 2px,
+      $base-color 5px,
+      #000000 4px,
+      rgb(0, 0, 0) 6px,
+      rgb(91, 91, 91) 8px,
+      $base-color 2px);
+  background-size: 200% 200%;
+  animation: background-move 200s ease-in-out infinite;
+}
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+@keyframes background-move {
+  100% {
+    background-position: 100% 100%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+}
+```
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

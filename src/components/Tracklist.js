@@ -8,12 +8,12 @@ function Tracklist({ tracklist, toggleTracklistView }) {
 
   return (
     <div className='tracklist-modal'>
-      <div className='tracklist-wrapper2'>
+      <div className='tracklist-section'>
         <div className='tracklist-wrapper'>
           <ul>
             {
               trackArtist.map((track, i) => (
-                <li key={i} className="product-card">
+                <li key={i}>
                   {track[0]} - {track[1]}
                 </li>
               ))

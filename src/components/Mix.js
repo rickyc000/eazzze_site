@@ -2,11 +2,8 @@ import React from 'react'
 
 import Tracklist from '../components/Tracklist.js'
 
-// import close from '../assets/icons/icons8-close-window-96.png'
-// import close from '../assets/icons/close-svgrepo-com.svg'
 import close from '../assets/icons/close-svgrepo-com (3).svg'
 import tracklist from '../assets/icons/lines-svgrepo-com.svg'
-
 
 
 function Mix({ mix, artwork }) {
@@ -18,11 +15,8 @@ function Mix({ mix, artwork }) {
     setTracklistVisible(!tracklistVisible)
   }
 
-  console.log(mixOpen)
-
   return (
     <div>
-
       {
         mixOpen ?
           <div>
@@ -37,8 +31,7 @@ function Mix({ mix, artwork }) {
                   allow="autoplay"
                   src={mix.src}>
                 </iframe>
-
-              </div >
+              </div>
               <div
                 className='open-mix-options'
               >
@@ -66,8 +59,6 @@ function Mix({ mix, artwork }) {
               onClick={() => setMixOpen(!mixOpen)} />
           </div>
       }
-
-
       {
         tracklistVisible ?
           <div>
@@ -76,14 +67,11 @@ function Mix({ mix, artwork }) {
               toggleTracklistView={toggleTracklistView} />
           </div>
           :
-          <div>
+          <div className='tracklist-closed'>
           </div>
       }
-
-
     </div>
   )
 }
-
 
 export default Mix

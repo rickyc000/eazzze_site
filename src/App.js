@@ -7,10 +7,10 @@ import Nav from './components/Nav.js'
 import Mix from './components/Mix.js'
 // import Tracklist from './components/Tracklist.js'
 
-import mix1Artwork from './assets/headroom_IMG_1817.png'
-import mix2Artwork from './assets/mix2-iphone.JPG'
-import mix3Artwork from './assets/mix3-test.jpg'
-import mix4Artwork from './assets/z11.2.jpg'
+import mix1Artwork from './assets/images/headroom_IMG_1817.png'
+import mix2Artwork from './assets/images/mix2-iphone.JPG'
+import mix3Artwork from './assets/images/mix3-test.jpg'
+import mix4Artwork from './assets/images/z11.2.jpg'
 
 // import close from './assets/icons/icons8-close-window-96.png'
 
@@ -38,7 +38,7 @@ function App() {
         </div>
 
 
-        <div className='mix-wrapper testmix'>
+        <div className='mix-wrapper'>
           <Mix
             mix={mixData['E00']}
             artwork={artwork.mix2} />
@@ -50,8 +50,7 @@ function App() {
             artwork={artwork.mix3} />
         </div>
 
-
-        <div className='mix-wrapper testmix'>
+        <div className='mix-wrapper'>
           <Mix
             mix={mixData['E00']}
             artwork={artwork.mix4} />
@@ -65,7 +64,6 @@ function App() {
         {/* <a href="https://www.instagram.com/_rickycato/" target="_blank" rel="noreferrer">instagram</a> */}
         <a href="https://soundcloud.com/eazzze" target="_blank" rel="noreferrer">soundcloud</a>
       </footer>
-
 
     </main >
   )
