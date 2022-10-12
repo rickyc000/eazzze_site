@@ -6,7 +6,7 @@ import close from '../assets/icons/close-svgrepo-com (3).svg'
 import tracklist from '../assets/icons/lines-svgrepo-com.svg'
 
 
-function Mix({ mix, artwork }) {
+function Mix({ mix, artwork, toggleCursorView }) {
 
   const [mixOpen, setMixOpen] = React.useState(false)
   const [tracklistVisible, setTracklistVisible] = React.useState(false)
@@ -23,6 +23,8 @@ function Mix({ mix, artwork }) {
             <div className='open-mix'>
               <div className='soundcloud-embed-wrap'>
                 <iframe
+                  onMouseEnter={toggleCursorView}
+                  onMouseLeave={toggleCursorView}
                   title='mix1'
                   width="305"
                   height="305"

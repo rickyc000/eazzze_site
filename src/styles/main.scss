@@ -7,8 +7,6 @@ $text-color: rgb(135, 135, 135);
 
 html,
 body {
-  // background-color: rgb(218,218,193);
-  // color: rgb(135, 135, 135);
   background-color: #3c3c3c;
   background-color: #1d1d1d;
   color: #000000;
@@ -19,7 +17,6 @@ body {
   padding: 0;
   font-size: 20px;
   height: 100%;
-  // letter-spacing: 1px;
 }
 
 main {
@@ -30,31 +27,29 @@ main {
 
 
 nav {
-  // background-color: $text-color;
-  // color: #000000;
   height: 50px;
 }
 
 .mix-wrapper {
   width: 300px;
   margin: 40px 30px;
-  // border: 1px solid lightgray;
 }
-
-// .testmix {
-//   margin: -40px 20px 70px 400px;
-// }
 
 .title {
   padding: 17px;
-  cursor: default;
   width: min-content;
 }
 
 .mix-artwork {
   width: 305px;
   height: 305px;
-  cursor: pointer;
+  // cursor: pointer;
+  transition: 0.5s;
+}
+
+.soundcloud-embed-wrap {
+  background: grey;
+  height: 305px;
 }
 
 .tracklist-modal {
@@ -116,7 +111,7 @@ ul {
 .open-mix-options {
   background-color: $text-color;
   height: min-content;
-  cursor: pointer;
+  // cursor: pointer;
   display: flex;
   flex-direction: column;
 }
@@ -133,11 +128,22 @@ ul {
   margin: 4px 4px 0px 4px;
 }
 
+.closed-mix {
+  background: white;
+  height: 305px;
+  width: max-content;
+}
+
+.mix-artwork:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
 .close-tracklist {
   height: min-content;
   background-color: $text-color;
   margin: 4px 4px 0px;
-  cursor: pointer;
+  // cursor: pointer;
 }
 
 .close-tracklist-wrapper {
@@ -156,6 +162,13 @@ a {
   color: $text-color;
   padding: 17px;
   text-decoration: none;
+  cursor: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: rgb(224, 224, 224);
+  transition: 0.5s;
 }
 
 .footer {
@@ -192,4 +205,21 @@ main {
   50% {
     background-position: 50% 50%;
   }
+}
+
+.App {
+  cursor: none;
+}
+
+.cursor-style {
+  background-color: $text-color;
+  height: 0.85rem;
+  width: 0.85rem;
+  border: 1px solid black;
+  box-shadow: 2px 2px #000000;
+  transform-origin: 100% 100%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  pointer-events: none;
+  z-index: 100;
 }

@@ -1,5 +1,8 @@
-import React from 'react';
-import './styles/main.scss';
+import React from 'react'
+
+import { useRef } from 'react'
+
+import './styles/main.scss'
 
 import mixData from './mixes.json'
 
@@ -12,8 +15,6 @@ import mix2Artwork from './assets/images/mix2-iphone.JPG'
 import mix3Artwork from './assets/images/mix3-test.jpg'
 import mix4Artwork from './assets/images/z11.2.jpg'
 
-// import close from './assets/icons/icons8-close-window-96.png'
-
 const artwork = {
   mix1: mix1Artwork,
   mix2: mix2Artwork,
@@ -21,18 +22,31 @@ const artwork = {
   mix4: mix4Artwork
 }
 
-
 function App() {
 
-  console.log(artwork.mix3)
+  const cursor = useRef(null)
+  const changePosition = (e) => {
+    cursor.current.style.top = `${e.clientY}px`;
+    cursor.current.style.left = `${e.clientX}px`;
+  }
+
+  const toggleCursorView = (e) => {
+    if (e.type === 'mouseenter') {
+      cursor.current.style.display = 'none'
+    } else {
+      cursor.current.style.display = 'block'
+    }
+  }
 
   return (
-    <main className="App">
+    <main className="App" onMouseMove={changePosition} >
+      <div className="cursor-style" ref={cursor} ></div>
       <Nav />
 
       <div className='mix-section'>
         <div className='mix-wrapper'>
           <Mix
+            toggleCursorView={toggleCursorView}
             mix={mixData['z11.1']}
             artwork={artwork.mix1} />
         </div>
@@ -40,6 +54,7 @@ function App() {
 
         <div className='mix-wrapper'>
           <Mix
+            toggleCursorView={toggleCursorView}
             mix={mixData['E00']}
             artwork={artwork.mix2} />
         </div>
