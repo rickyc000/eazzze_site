@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 
 import './styles/main.scss'
 
@@ -25,7 +25,14 @@ const artwork = {
 function App() {
 
   const cursor = useRef(null)
+  // cursor.current.style.display = 'none'
+
+  useEffect(() => {
+    cursor.current.style.display = 'none'
+  }, [])
+
   const changePosition = (e) => {
+    cursor.current.style.display = 'block'
     cursor.current.style.top = `${e.clientY}px`;
     cursor.current.style.left = `${e.clientX}px`;
   }
