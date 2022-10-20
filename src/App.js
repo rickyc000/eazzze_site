@@ -60,13 +60,13 @@ function App() {
             artwork={artwork.mix2} />
         </div>
 
-        {/* <div className='mix-wrapper'>
+        <div className='mix-wrapper'>
           <Mix
-            mix={mixData['z11.1']}
+            mix={mixData['LX']}
             artwork={artwork.mix3} />
         </div>
 
-        <div className='mix-wrapper'>
+        {/* <div className='mix-wrapper'>
           <Mix
             mix={mixData['E00']}
             artwork={artwork.mix4} />

@@ -65,7 +65,42 @@
       "D. Tiffany": "4 Leaf",
       "Stone": "Beacon"
     }
+  },
+  "LX": {
+    "name": "LX",
+    "src": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1366371856&color=%23050505&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "tracklist": {
+      "Nadia Khan": "Conversation (CLL Remix)",
+      "Mafou": "Evom",
+      "Tristan Arp x Kellen303": "entangled beings",
+      "pole": "achterbahn",
+      "nosync": "One Simulated Actual",
+      "Thodén": "Specialist (Perko Remix)",
+      "Il.Ek.Tro": "White Void",
+      "RHR": "Na Captura",
+      "Henzo": "From Stun To Kill",
+      "Jabes": "Ripples",
+      "Donato Dozzy": "messy kafka world",
+      "E.R.P.": "Pith",
+      "Barker": "E7-E5",
+      "Bambounou": "Craig.py",
+      "Xozgk": "skllpt",
+      "Klon Dump": "Verklärte Dumpster",
+      "RAC": "TRYBE_UNR",
+      "PVAS": "Passing Through",
+      "MoMA Ready": "Something To Say (Slip Mix)",
+      "Geo Rip": "Tooni",
+      "Hydraulix": "Krunk",
+      "Beneath": "High Five",
+      "Al Wootton": "Alder",
+      "Commodo": "Scabz",
+      "Autechre": "32a_reflected",
+      "TÉNÈBRE": "Tuvan",
+      "Pessimist": "MDZhB",
+      "Forest Drive West": "Creeper",
+      "Pariah": "Frogspawn",
+      "exael": "quikgel"
+    }
   }
 }
-
 
