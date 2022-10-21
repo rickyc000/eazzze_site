@@ -62,6 +62,7 @@ function App() {
 
         <div className='mix-wrapper'>
           <Mix
+            toggleCursorView={toggleCursorView}
             mix={mixData['LX']}
             artwork={artwork.mix3} />
         </div>
