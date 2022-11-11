@@ -23,32 +23,36 @@ main {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-attachment: fixed;
 }
 
 
 nav {
   height: 50px;
+  position: fixed;
 }
 
 .mix-wrapper {
   width: 300px;
-  margin: 40px 30px;
+  // margin: 40px 30px;
 }
 
 .title {
   padding: 17px;
   width: min-content;
+  cursor: default;
 }
 
 .mix-artwork {
   width: 305px;
   height: 305px;
-  // cursor: pointer;
+  cursor: pointer;
   transition: 0.5s;
+  background: #878787;
 }
 
 .soundcloud-embed-wrap {
-  background: grey;
+  // background: grey;
   height: 305px;
 }
 
@@ -84,6 +88,7 @@ nav {
   padding: 10px 90px 10px 10px;
   font-size: 14px;
   text-indent: -5px;
+  animation: fadeIn 0.5s;
 }
 
 .tracklist-closed {
@@ -111,7 +116,7 @@ ul {
 .open-mix-options {
   background-color: $text-color;
   height: min-content;
-  // cursor: pointer;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
 }
@@ -141,13 +146,15 @@ ul {
 }
 
 .closed-mix {
-  background: $text-color;
+  // background: $text-color;
   height: 305px;
-  width: max-content;
+  // width: max-content;
+  width: 331px;
 }
 
 .mix-artwork:hover {
-  opacity: 0.7;
+  // opacity: 0.7;
+  filter: contrast(0.7);
   transition: 0.5s;
 }
 
@@ -155,7 +162,7 @@ ul {
   height: min-content;
   margin: 4px 4px 0px;
   transition: 0.2s;
-  // cursor: pointer;
+  cursor: pointer;
 }
 
 .close-tracklist:hover {
@@ -179,7 +186,7 @@ a {
   color: $text-color;
   padding: 17px;
   text-decoration: none;
-  cursor: none;
+  cursor: pointer;
   transition: 0.5s;
 }
 
@@ -197,10 +204,19 @@ a:hover {
 .mix-section {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .mix-wrapper {
-  flex: 1;
+  flex: 80%;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  // padding: 26px 0px 0px 0px;
+}
+
+.mix-wrapper:nth-child(odd) {
+  // justify-content: flex-end;
 }
 
 main {
@@ -212,7 +228,7 @@ main {
       rgb(91, 91, 91) 8px,
       $base-color 2px);
   background-size: 200% 200%;
-  animation: background-move 200s ease-in-out infinite;
+  animation: background-move 400s ease-in-out infinite;
 }
 
 @keyframes background-move {
@@ -225,7 +241,7 @@ main {
 }
 
 .App {
-  cursor: none;
+  // cursor: none;
 }
 
 .cursor-style {
@@ -240,3 +256,10 @@ main {
   pointer-events: none;
   z-index: 100;
 }
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+

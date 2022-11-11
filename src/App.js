@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useRef } from 'react'
+// import { useRef } from 'react'
 
 import './styles/main.scss'
 
@@ -10,10 +10,10 @@ import Nav from './components/Nav.js'
 import Mix from './components/Mix.js'
 // import Tracklist from './components/Tracklist.js'
 
-import mix1Artwork from './assets/images/headroom_IMG_1817.png'
-import mix2Artwork from './assets/images/mix2-iphone.JPG'
-import mix3Artwork from './assets/images/mix3-test.jpg'
-import mix4Artwork from './assets/images/z11.2.jpg'
+import mix1Artwork from './assets/images/mix1-image.png'
+import mix2Artwork from './assets/images/mix2-image.jpg'
+import mix3Artwork from './assets/images/mix3-image.jpg'
+import mix4Artwork from './assets/images/mix4-image.png'
 
 const artwork = {
   mix1: mix1Artwork,
@@ -24,62 +24,65 @@ const artwork = {
 
 function App() {
 
-  const cursor = useRef(null)
+  // const cursor = useRef(null)
 
-  const changePosition = (e) => {
-    cursor.current.style.top = `${e.clientY}px`;
-    cursor.current.style.left = `${e.clientX}px`;
-  }
+  // const changePosition = (e) => {
+  //   cursor.current.style.top = `${e.clientY}px`;
+  //   cursor.current.style.left = `${e.clientX}px`;
+  // }
 
-  const toggleCursorView = (e) => {
-    if (e.type === 'mouseenter') {
-      cursor.current.style.display = 'none'
-    } else {
-      cursor.current.style.display = 'block'
-    }
-  }
+  // const toggleCursorView = (e) => {
+  //   if (e.type === 'mouseenter') {
+  //     cursor.current.style.display = 'none'
+  //   } else {
+  //     cursor.current.style.display = 'block'
+  //   }
+  // }
 
   return (
-    <main className="App" onMouseMove={changePosition} >
-      <div className="cursor-style" ref={cursor} style={{top: '-20px'}}></div>
+    // <main className="App" onMouseMove={changePosition} >
+    <main className="App" >
+      {/* <div className="cursor-style" ref={cursor} style={{ top: '-20px' }}></div> */}
       <Nav />
 
       <div className='mix-section'>
+
+      {/* <div className='mix-wrapper'>
+        <Mix
+          // toggleCursorView={toggleCursorView}
+          mix={mixData['inc']}
+          artwork={artwork.mix4} />
+      </div> */}
+
+      <div className='mix-wrapper'>
+        <Mix
+          // toggleCursorView={toggleCursorView}
+          mix={mixData['LX']}
+          artwork={artwork.mix3} />
+      </div>
+
+      <div className='mix-wrapper'>
+        <Mix
+          // toggleCursorView={toggleCursorView}
+          mix={mixData['E00']}
+          artwork={artwork.mix2} />
+      </div>
+
         <div className='mix-wrapper'>
           <Mix
-            toggleCursorView={toggleCursorView}
+            // toggleCursorView={toggleCursorView}
             mix={mixData['z11.1']}
             artwork={artwork.mix1} />
         </div>
 
 
-        <div className='mix-wrapper'>
-          <Mix
-            toggleCursorView={toggleCursorView}
-            mix={mixData['E00']}
-            artwork={artwork.mix2} />
-        </div>
-
-        <div className='mix-wrapper'>
-          <Mix
-            toggleCursorView={toggleCursorView}
-            mix={mixData['LX']}
-            artwork={artwork.mix3} />
-        </div>
-
-        {/* <div className='mix-wrapper'>
-          <Mix
-            mix={mixData['E00']}
-            artwork={artwork.mix4} />
-        </div> */}
-
       </div>
 
 
       <footer className='footer'>
-        <a href="mailto:eazzze.info@gmail.com">email</a>
-        {/* <a href="https://www.instagram.com/_rickycato/" target="_blank" rel="noreferrer">instagram</a> */}
         <a href="https://soundcloud.com/eazzze" target="_blank" rel="noreferrer">soundcloud</a>
+        <a href="mailto:eazzze.info@gmail.com">contact</a>
+        {/* <a href="https://www.instagram.com/_rickycato/" target="_blank" rel="noreferrer">instagram</a> */}
       </footer>
 
     </main >
