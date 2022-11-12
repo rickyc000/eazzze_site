@@ -5,6 +5,7 @@ import React from 'react'
 import './styles/main.scss'
 
 import mixData from './mixes.json'
+// import mixData from './mixes-copy.json'
 
 import Nav from './components/Nav.js'
 import Mix from './components/Mix.js'
@@ -13,7 +14,8 @@ import Mix from './components/Mix.js'
 import mix1Artwork from './assets/images/mix1-image.png'
 import mix2Artwork from './assets/images/mix2-image.jpg'
 import mix3Artwork from './assets/images/mix3-image.jpg'
-import mix4Artwork from './assets/images/mix4-image.png'
+import mix4Artwork from './assets/images/mix4-image.jpg'
+// import mix4Artwork from './assets/images/z11.2.jpg'
 
 const artwork = {
   mix1: mix1Artwork,
@@ -47,12 +49,12 @@ function App() {
 
       <div className='mix-section'>
 
-      {/* <div className='mix-wrapper'>
+      <div className='mix-wrapper'>
         <Mix
           // toggleCursorView={toggleCursorView}
           mix={mixData['inc']}
           artwork={artwork.mix4} />
-      </div> */}
+      </div>
 
       <div className='mix-wrapper'>
         <Mix
