@@ -184,7 +184,7 @@ ul {
 
 a {
   color: $text-color;
-  padding: 17px;
+  padding: 17px 17px 17px 0px;
   text-decoration: none;
   cursor: pointer;
   transition: 0.5s;
@@ -197,7 +197,7 @@ a:hover {
 
 .footer {
   bottom: 0;
-  padding: 20px;
+  padding: 17px;
   margin-top: auto;
 }
 
