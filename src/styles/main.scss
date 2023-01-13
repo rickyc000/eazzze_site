@@ -30,6 +30,7 @@ main {
 nav {
   height: 50px;
   position: fixed;
+  z-index: 2;
 }
 
 .mix-wrapper {
@@ -49,6 +50,7 @@ nav {
   cursor: pointer;
   transition: 0.5s;
   background: #878787;
+  position: relative;
 }
 
 .soundcloud-embed-wrap {
@@ -68,7 +70,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 4;
   white-space: pre-wrap;
   position: fixed;
   top: 0;
@@ -199,12 +201,15 @@ a:hover {
   bottom: 0;
   padding: 17px;
   margin-top: auto;
+  z-index: 2;
 }
+
 
 .mix-section {
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
+  z-index: 2;
 }
 
 .mix-wrapper {
@@ -228,7 +233,7 @@ main {
       rgb(91, 91, 91) 8px,
       $base-color 2px);
   background-size: 200% 200%;
-  animation: background-move 400s ease-in-out infinite;
+  animation: background-move 2000s ease-in-out infinite;
 }
 
 @keyframes background-move {
@@ -244,17 +249,40 @@ main {
   // cursor: none;
 }
 
-.cursor-style {
+// .cursor-style {
+//   background-color: $text-color;
+//   height: 0.8rem;
+//   width: 0.8rem;
+//   border: 1px solid black;
+//   box-shadow: 2px 2px #000000;
+//   transform-origin: 100% 100%;
+//   transform: translate(-50%, -50%);
+//   position: fixed;
+//   pointer-events: none;
+//   z-index: 100;
+// }
+
+.top-layer {
   background-color: $text-color;
-  height: 0.8rem;
-  width: 0.8rem;
-  border: 1px solid black;
+  height: 10000px;
+  width: 10000px;
+  background: repeating-linear-gradient(180deg,
+      $text-color 2px,
+      rgb(1,1,1,) 7px,
+      #ffffff 4px,
+      rgba(216, 216, 216, 0.625) 7px,
+      rgba(255, 0, 0, 0) 9px,
+      $base-color 2px);
+  // border: 1px solid black;
+  // opacity: 0.5;
   box-shadow: 2px 2px #000000;
-  transform-origin: 100% 100%;
+  transform-origin: 200% 200%;
   transform: translate(-50%, -50%);
   position: fixed;
   pointer-events: none;
-  z-index: 100;
+  z-index: 1;
+  animation: 5s infinite 1s fadeIn;
+  animation-direction: alternate;
 }
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-// import { useRef } from 'react'
+import { useRef } from 'react'
 
 import './styles/main.scss'
 
@@ -26,12 +26,12 @@ const artwork = {
 
 function App() {
 
-  // const cursor = useRef(null)
+  const cursor = useRef(null)
 
-  // const changePosition = (e) => {
-  //   cursor.current.style.top = `${e.clientY}px`;
-  //   cursor.current.style.left = `${e.clientX}px`;
-  // }
+  const changePosition = (e) => {
+    cursor.current.style.top = `${e.clientY}px`;
+    cursor.current.style.left = `${e.clientX}px`;
+  }
 
   // const toggleCursorView = (e) => {
   //   if (e.type === 'mouseenter') {
@@ -42,9 +42,10 @@ function App() {
   // }
 
   return (
-    // <main className="App" onMouseMove={changePosition} >
-    <main className="App" >
-      {/* <div className="cursor-style" ref={cursor} style={{ top: '-20px' }}></div> */}
+    <main className="App" onMouseMove={changePosition} >
+    {/* <main className="App" > */}
+      <div className="cursor-style" ref={cursor} style={{ top: '-20px' }}></div>
+      <div className="top-layer"></div>
       <Nav />
 
       <div className='mix-section'>
