@@ -32,7 +32,7 @@ function Mix({ mix, artwork, toggleCursorView }) {
     //* Delays the closing of the mix:
     setTimeout(() => {
       setMixOpen(false)
-    }, 400)
+    }, 0)
   }
 
 
