@@ -5,15 +5,36 @@ import Tracklist from '../components/Tracklist.js'
 import close from '../assets/icons/close-svgrepo-com (3).svg'
 import tracklist from '../assets/icons/lines-svgrepo-com.svg'
 
-
 function Mix({ mix, artwork, toggleCursorView }) {
 
   const [mixOpen, setMixOpen] = React.useState(false)
+  const [mixOpening, setMixOpening] = React.useState(false)
   const [tracklistVisible, setTracklistVisible] = React.useState(false)
 
   const toggleTracklistView = () => {
     setTracklistVisible(!tracklistVisible)
   }
+
+  const openTheMix = () => {
+
+    setMixOpening(true)
+
+    //* Delays the opening of the mix:
+    setTimeout(() => {
+      setMixOpen(true)
+    }, 300)
+  }
+
+  const closeTheMix = () => {
+
+    setMixOpening(false)
+
+    //* Delays the closing of the mix:
+    setTimeout(() => {
+      setMixOpen(false)
+    }, 400)
+  }
+
 
   return (
     <div>
@@ -28,7 +49,6 @@ function Mix({ mix, artwork, toggleCursorView }) {
                   title='mix1'
                   width="305"
                   height="305"
-                  scrolling="no"
                   frameborder="no"
                   allow="autoplay"
                   src={mix.src}>
@@ -39,7 +59,9 @@ function Mix({ mix, artwork, toggleCursorView }) {
               >
                 <img
                   className='close-mix-window'
-                  onClick={() => setMixOpen(false)}
+                  onClick={() =>
+                    closeTheMix()
+                  }
                   src={close}
                   alt="close-mix"
                   width="18px" />
@@ -54,11 +76,13 @@ function Mix({ mix, artwork, toggleCursorView }) {
           </div>
           :
           <div className='closed-mix'>
-            <img
-              src={artwork}
-              alt='mix1'
-              className='mix-artwork'
-              onClick={() => setMixOpen(!mixOpen)} />
+            <div className='closed-mix-overlay'>
+              <img
+                src={artwork}
+                alt='mix1'
+                className={`mix-artwork ${mixOpening ? `open` : `closed`}`}
+                onClick={() => setMixOpen(openTheMix)} />
+            </div>
           </div>
       }
       {

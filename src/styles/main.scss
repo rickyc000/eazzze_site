@@ -7,8 +7,8 @@ $text-color: rgb(135, 135, 135);
 
 html,
 body {
-  background-color: #3c3c3c;
-  background-color: #1d1d1d;
+  // background-color: #3c3c3c;
+  // background-color: #1d1d1d;
   color: #000000;
   color: rgb(218, 218, 193);
   color: $text-color;
@@ -57,7 +57,7 @@ nav {
 }
 
 .soundcloud-embed-wrap {
-  background: $text-color;
+  background: #5c5c5c;
   height: 305px;
 }
 
@@ -112,6 +112,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 15px;
+  line-height: 1.4;
 }
 
 .open-mix {
@@ -301,7 +302,7 @@ main {
 }
 
 .open-mix-options {
-  animation: initialLoad 5s;
+  animation: fadeIn 1s;
 }
 
 
@@ -335,4 +336,17 @@ main {
 
 .soundcloudIcon {
   width: 30px;
+}
+
+
+.open {
+  opacity: 0;
+  background-color: #000000;
+  transition: opacity 0.4s;
+}
+
+.closed-mix-overlay {
+  width: 305px;
+  height: 305px;
+  background-color: #5c5c5c;
 }
