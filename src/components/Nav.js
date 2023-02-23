@@ -6,7 +6,7 @@ function Nav() {
   return (
     <nav className='navbar'>
       <div className='title'>
-        eazzze
+        eazzze.net
       </div>
     </nav>
   )

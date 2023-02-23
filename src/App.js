@@ -17,6 +17,8 @@ import mix3Artwork from './assets/images/mix3-image.jpg'
 import mix4Artwork from './assets/images/mix4-image.jpg'
 // import mix4Artwork from './assets/images/z11.2.jpg'
 
+import SoundcloudIcon from './assets/icons/icons8-soundcloud-100.png'
+
 const artwork = {
   mix1: mix1Artwork,
   mix2: mix2Artwork,
@@ -43,33 +45,33 @@ function App() {
 
   return (
     <main className="App" onMouseMove={changePosition} >
-    {/* <main className="App" > */}
+      {/* <main className="App" > */}
       <div className="cursor-style" ref={cursor} style={{ top: '-20px' }}></div>
-      <div className="top-layer"></div>
+      {/* <div className="top-layer"></div> */}
       <Nav />
 
       <div className='mix-section'>
 
-      <div className='mix-wrapper'>
-        <Mix
-          // toggleCursorView={toggleCursorView}
-          mix={mixData['inc']}
-          artwork={artwork.mix4} />
-      </div>
+        <div className='mix-wrapper'>
+          <Mix
+            // toggleCursorView={toggleCursorView}
+            mix={mixData['inc']}
+            artwork={artwork.mix4} />
+        </div>
 
-      <div className='mix-wrapper'>
-        <Mix
-          // toggleCursorView={toggleCursorView}
-          mix={mixData['LX']}
-          artwork={artwork.mix3} />
-      </div>
+        <div className='mix-wrapper'>
+          <Mix
+            // toggleCursorView={toggleCursorView}
+            mix={mixData['LX']}
+            artwork={artwork.mix3} />
+        </div>
 
-      <div className='mix-wrapper'>
-        <Mix
-          // toggleCursorView={toggleCursorView}
-          mix={mixData['E00']}
-          artwork={artwork.mix2} />
-      </div>
+        <div className='mix-wrapper'>
+          <Mix
+            // toggleCursorView={toggleCursorView}
+            mix={mixData['E00']}
+            artwork={artwork.mix2} />
+        </div>
 
         <div className='mix-wrapper'>
           <Mix
@@ -83,8 +85,10 @@ function App() {
 
 
       <footer className='footer'>
-        <a href="https://soundcloud.com/eazzze" target="_blank" rel="noreferrer">soundcloud</a>
-        <a href="mailto:eazzze.info@gmail.com">email</a>
+        <a href="https://soundcloud.com/eazzze" target="_blank" rel="noreferrer">
+          <img src={SoundcloudIcon} alt='Soundcloud' className='soundcloudIcon'/>
+        </a>
+        {/* <a href="mailto:eazzze.info@gmail.com">email</a> */}
         {/* <a href="https://www.instagram.com/_rickycato/" target="_blank" rel="noreferrer">instagram</a> */}
       </footer>
 
