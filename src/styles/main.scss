@@ -10,6 +10,7 @@ body {
   // background-color: #3c3c3c;
   // background-color: #1d1d1d;
   color: #000000;
+  // background-color: #525252;
   color: rgb(218, 218, 193);
   color: $text-color;
   font-family: Times New Roman;
@@ -222,7 +223,7 @@ a:hover {
   flex: 80%;
   padding: 25px;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   // padding: 26px 0px 0px 0px;
 }
 
@@ -232,6 +233,7 @@ a:hover {
 
 main {
   background-color: $text-color;
+  background-color: #525252;
   // background: repeating-linear-gradient(0deg,
   //     $text-color 2px,
   //     $base-color 5px,
