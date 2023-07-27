@@ -56,7 +56,7 @@
       "Forest Drive West": "Sustain [Ilian Tape]",
       "Donato Dozzy": "Tao [Samurai Music]",
       "Homemade Weapons": "Keelhaul MVP",
-      "Tammo Hesselink": "Danaba [Delsin Records]",
+      "Tammo Hesselink": "Danaba [Delsin]",
       "Tonto": "Moa [Cong Burn]",
       "Konduku": "Mantar Kaya [Spazio Disponibile]",
       "Ena": "Behind The Loops [Samurai Horo]",
@@ -134,5 +134,64 @@
       "Koreless": "frozen (slow mix) [Young]",
       "Yugen": "Resfeber [Semantica]"
     }
-  }
+  },
+  "exstp": {
+    "name": "exstp",
+    "src": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1575713089&color=%23141c14&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "tracklist": {
+      "Aphex Twin": "Blackbox Life Recorder 21f [Warp]",
+      "Atrice": "Taxon [MIRAS]",
+      "Mia Koden": "Hot Take",
+      "Skee Mask": "Bandprobe Dub [Ilian Tape]",
+      "Piezo": "Cyclic Wavez [Nervous Horizon]",
+      "PVAS ft. PS": "Dream Resumption [Isla]",
+      "Batu": "For Spirits [A Long Strange Dream]",
+      "VC-118A": "Plonk [Delsin]",
+      "Speedy J": "Sonof [NovaMute]",
+      "Karenn": "From Hunk To Husk [Voam]",
+      "Freeform": "Tin [Sub Rosa]",
+      "Katatonic Silentio": "Midnight Train Breaking Through [Ilian Tape]",
+      "Low Budget Aliens": "Hazardous Waste Pump [xpq?]",
+      "Loek Frey": "Attach T [Omen Wapta]",
+      "Ghost Warrior": "Midnighters [The Collection Artaud]",
+      "NPLGNN": "Skankin' [Digital Hundebiss]",
+      "Metrist": "Y Y Y MY [Timedance]",
+      "Thing": "Atomica [Dubthing Records]",
+      "Low Khey": "Casual Rapture [Comic Sans Records]",
+      "GiGi FM": "22 Tear Drops [Bambe]",
+      "Cypher": "give [Appendix.files]",
+      "Ambien Baby": "T’Siento [NAFF]",
+      "RDG": "Avoidanze",
+      "Lårry": "Uniform Uninform [BRUK]"
+    }
+  }, "exstp2": {
+    "name": "exstp",
+    "src": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1575713089&color=%23141c14&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "tracklist": {
+      "Aphex Twin": "Blackbox Life Recorder 21f",
+      "Atrice": "Taxon",
+      "Mia Koden": "Hot Take",
+      "Skee Mask": "Bandprobe Dub",
+      "Piezo": "Cyclic Wavez",
+      "PVAS ft. PS": "Dream Resumption",
+      "Batu": "For Spirits",
+      "VC-118A": "Plonk",
+      "Speedy J": "Sonof",
+      "Karenn": "From Hunk To Husk",
+      "Freeform": "Tin",
+      "Katatonic Silentio": "Midnight Train Breaking Through",
+      "Low Budget Aliens": "Hazardous Waste Pump",
+      "Loek Frey": "Attach T",
+      "Ghost Warrior": "Midnighters",
+      "NPLGNN": "Skankin'",
+      "Metrist": "Y Y Y MY",
+      "Thing": "Atomica",
+      "Low Khey": "Casual Rapture",
+      "GiGi FM": "22 Tear Drops",
+      "Cypher": "give",
+      "Ambien Baby": "T’Siento",
+      "RDG": "Avoidanze",
+      "Lårry": "Uniform Uninform"
+    }
+  } 
 }
