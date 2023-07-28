@@ -164,7 +164,8 @@
       "RDG": "Avoidanze",
       "Lårry": "Uniform Uninform [BRUK]"
     }
-  }, "exstp2": {
+  },
+  "exstp2": {
     "name": "exstp",
     "src": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1575713089&color=%23141c14&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     "tracklist": {
@@ -193,5 +194,67 @@
       "RDG": "Avoidanze",
       "Lårry": "Uniform Uninform"
     }
-  } 
+  },
+  "z112b": {
+    "name": "z112b",
+    "src": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1575713089&color=%23141c14&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "tracklist": {
+      "memotone": "DroneX-7 (Extended Mix)",
+      "Batu": "Through The Glass",
+      "n9oc": "U",
+      "Mika Vainio": "The Human Fly",
+      "O Yuki Conjugate": "Deep Head Scene",
+      "Yugen Disciple": "Zero Day",
+      "Carrier": "Lost On Me",
+      "Aleksi Perälä": "FI3AC2150020",
+      "Mosca": "The Warden",
+      "NEXCYIA": "4U&4ME",
+      "Liai": "Four Directions in Flowers",
+      "ben bondy": "when u sleep",
+      "Opiate": "Opis",
+      "Oren Ambarchi": "Passage",
+      "Civilistjävel!": "Sebäng",
+      "POiSON ANNA, Chloe Anna Danquah and Oliver Hyde Mobbs": "SLOW PERRY",
+      "The Fellow Passenger": "BUTTERFLY",
+      "Muslimgauze": "Desert Gulag",
+      "Mica Levi": "Blue Shit",
+      "Perko feat. Cucina Povera": "Sisu",
+      "Inhmost": "Calming Influence",
+      "Chewlie": "Redae",
+      "Chantal Michelle": "Broken to Echoes",
+      "Pavel Milyakov": "choirs",
+      "Alva Noto + Ryuichi Sakamoto": "Glass"
+    }
+  },
+  "z11.2": {
+    "name": "z11.2",
+    "src": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1576706634&color=%23141c14&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+    "tracklist": {
+      "memotone": "DroneX-7 (Extended Mix) [Sahko Recordings]",
+      "Batu": "Through The Glass [A Long Strange Dream]",
+      "n9oc": "U [Die Orakel]",
+      "Mika Vainio": "The Human Fly [Raster-Noton]",
+      "O Yuki Conjugate": "Deep Head Scene",
+      "Yugen Disciple": "Zero Day [YOUTH]",
+      "Carrier": "Lost On Me [The Trilogy Tapes]",
+      "Aleksi Perälä": "FI3AC2150020",
+      "Mosca": "The Warden [Rent]",
+      "NEXCYIA": "4U&4ME",
+      "Liai": "Four Directions in Flowers [Quiet Time Tapes]",
+      "ben bondy": "when u sleep [3 X L]",
+      "Opiate": "Opis [Hobby Industries]",
+      "Oren Ambarchi": "Passage [Touch]",
+      "Civilistjävel!": "Sebäng [FELT]",
+      "POiSON ANNA, Chloe Anna Danquah and Oliver Hyde Mobbs": "SLOW PERRY [NTS]",
+      "The Fellow Passenger": "BUTTERFLY [Point Source Electronic Arts]",
+      "Muslimgauze": "Desert Gulag [Staalplaat]",
+      "Mica Levi": "Blue Shit",
+      "Perko feat. Cucina Povera": "Sisu [Numbers]",
+      "Inhmost": "Calming Influence [re:st]",
+      "Chewlie": "Redae [efja]",
+      "Chantal Michelle": "Broken to Echoes [Somewhere Between Tapes]",
+      "Pavel Milyakov": "choirs [AD 93]",
+      "Alva Noto + Ryuichi Sakamoto": "Glass [Noton]"
+    }
+  }
 }

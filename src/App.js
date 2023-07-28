@@ -55,12 +55,12 @@ function App() {
 
       <div className='mix-section'>
 
-      {/* <div className='mix-wrapper'>
+      <div className='mix-wrapper'>
           <Mix
             // toggleCursorView={toggleCursorView}
-            mix={mixData['inc']}
+            mix={mixData['z11.2']}
             artwork={artwork.mix6} />
-        </div> */}
+        </div>
 
       <div className='mix-wrapper'>
           <Mix
