@@ -17,6 +17,8 @@ import mix3Artwork from './assets/images/mix3-image.jpg'
 import mix4Artwork from './assets/images/mix4-image.jpg'
 import mix5Artwork from './assets/images/mix5-image.png'
 import mix6Artwork from './assets/images/mix6-image.png'
+import mix7Artwork from './assets/images/mix7-image.png'
+
 
 import SoundcloudIcon from './assets/icons/icons8-soundcloud-100.png'
 
@@ -27,6 +29,7 @@ const artwork = {
   mix4: mix4Artwork,
   mix5: mix5Artwork,
   mix6: mix6Artwork,
+  mix7: mix7Artwork
 }
 
 function App() {
@@ -54,6 +57,13 @@ function App() {
       <Nav />
 
       <div className='mix-section'>
+
+        <div className='mix-wrapper'>
+          <Mix
+            // toggleCursorView={toggleCursorView}
+            mix={mixData['eidsfoss']}
+            artwork={artwork.mix7} />
+        </div>
 
       <div className='mix-wrapper'>
           <Mix

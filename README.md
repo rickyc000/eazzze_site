@@ -1,9 +1,9 @@
 <img src='./public/favicon.ico' width="70px">
 
 # Artist Website: eazzze
-
+<!-- 
 ## Project Brief
-To produce a visually interesting artist website presenting mixes via embedded Soundcloud content with corresponding mix tracklists.
+To produce a visually interesting artist website presenting mixes via embedded Soundcloud content with corresponding mix tracklists. -->
 
 ## Technologies Used
 
@@ -33,7 +33,7 @@ This is then passed as a prop to Tracklist child component, allowing the trackli
     width="18px" />
 </div>
 ```
-
+<!-- 
 The moving background effect was created using the `repeating-linear-gradient` CSS function on the background property:
 
 ```
@@ -59,5 +59,5 @@ main {
 }
 ```
 
-
+ -->
 
