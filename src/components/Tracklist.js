@@ -11,13 +11,28 @@ function Tracklist({ tracklist, toggleTracklistView }) {
       <div className='tracklist-section'>
         <div className='tracklist-wrapper'>
           <ul>
-            {
+            {/* {
               trackArtist.map((track, i) => (
                 <li key={i}>
                   {track[0]} - {track[1]}
                 </li>
               ))
-            }
+            } */}
+
+            {
+              trackArtist.map((track, i) => {
+    const artist = track[0].replace(' (duplicate)', '')
+    const song = track[1]
+
+    return (
+      <li key={i}>
+        {artist} - {song}
+      </li>
+    )
+  })
+}
+
+
           </ul>
         </div>
         <div className='close-tracklist-wrapper' onClick={toggleTracklistView}>
