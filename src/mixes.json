@@ -318,7 +318,7 @@
   "Vladislav Delay": "Lumi",
   "winsome": "Who",
   "DJ Frog and SnP 500": "Cali",
-  "8004": "8007 dub",
+  "_8004": "8007 dub",
   "Luke Lund": "Telomeeri (Telomere)",
   "Speedy J": "mmf2_02"
   }
@@ -353,7 +353,7 @@
     "name": "z11.3",
     "src": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2289158417&color=%23000000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true",
     "tracklist": {
-    "In Transit": "A.33 [Felt]",
+  "In Transit": "A.33 [Felt]",
   "Ghost Dubs": "Lobotomy Version [Pressure Recordings]",
   "Katatonic Silentio": "Représentation Des Éléments [Ilian Tape]",
   "Ryoji Ikeda": "ultratronics 15 [NOTON]",
@@ -375,7 +375,7 @@
   "Vladislav Delay": "Lumi [Huume Recordings]",
   "winsome": "Who [Tanum Records]",
   "DJ Frog and SnP 500": "Cali [Doo]",
-  "8004": "8007 dub [Kino Disk]",
+  "_8004": "8007 dub [Kino Disk]",
   "Luke Lund": "Telomeeri (Telomere) [FLUF]",
   "Speedy J": "mmf2_02 [STOOR]"
   }

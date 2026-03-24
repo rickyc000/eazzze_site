@@ -21,7 +21,9 @@ function Tracklist({ tracklist, toggleTracklistView }) {
 
             {
               trackArtist.map((track, i) => {
-    const artist = track[0].replace(' (duplicate)', '')
+    const artist = track[0]
+      .replace(' (duplicate)', '')
+      .replace(/^_/, '')
     const song = track[1]
 
     return (
